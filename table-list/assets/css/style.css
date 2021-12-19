@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 500px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container table {
+  width: 100%;
+}
+.container table img {
+  width: 200px;
+  height: 150px;
+}
+.container table tbody td {
+  text-align: center;
+}
+
+form {
+  background: linear-gradient(to right, #343434, #878787);
+}
+form input {
+  height: 30px;
+  width: 100px;
+  background: cadetblue;
+  color: #fff;
+  text-align: center;
+}
+form input::placeholder {
+  color: #ffffff;
+}
+form input[type=file] {
+  height: 20px;
+  width: 110px;
+}
+
+form#add {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

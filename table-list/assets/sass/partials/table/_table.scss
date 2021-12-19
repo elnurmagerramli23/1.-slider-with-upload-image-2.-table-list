@@ -1,0 +1,45 @@
+.container{
+    width: 100%;
+    min-height: 500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    table {
+        width: 100%;
+        img {
+            width: 200px;
+            height: 150px;
+        }
+        tbody td{
+            text-align: center;
+        }
+    }
+}
+form{
+    background: linear-gradient(to right, #343434, #878787);
+    input{
+        height: 30px;
+        width: 100px;
+        background: cadetblue;
+        color: #fff;
+        text-align: center;
+        &::placeholder{
+            color: #ffffff;
+        }
+    }
+    input[type="file"]{
+        height: 20px;
+        width: 110px;
+    }
+}
+
+form#add{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
