@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/615154bd6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="upload">
+      <input type="file" class="upload__input" id="upload-img" multiple/>
+      <label for="upload-img">
+        <div class="upload__icon">
+          <span>Upload your files</span>
+          <i class="fas fa-chevron-circle-up"></i>
+        </div>
+      </label>
+      <div class="upload__container"></div>
+    </div>
+    <div class="modal">
+      <div class="popup">
+        <img src="./assets/images/big/1.jpg" alt="image big" />
+        <div class="close">
+          <span class="closeModal">&times;</span>
+        </div>
+        <div class="arrows">
+          <div class="prev">
+            <span class="leftSlide">&lt;</span>
+          </div>
+          <div class="next">
+            <span class="rightSlide">&gt;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/index2.js"></script>
+  </body>
+</html>

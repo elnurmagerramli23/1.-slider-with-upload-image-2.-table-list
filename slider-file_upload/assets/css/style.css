@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Shadows Into Light", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.upload {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #cf5c5c, #c19b4a, #def2a0, #c6ee4a, #42eca6, #64b3d9, #208ea2, #498ada, #5b73df, #897ed3, #cf5c5c, #c19b4a);
+  background-size: 100% 1100%;
+  animation: animateBg 10s linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.upload__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+}
+.upload__icon span {
+  font-size: 36px;
+}
+.upload__icon span:hover {
+  cursor: pointer;
+}
+.upload__icon i {
+  font-size: 42px;
+}
+.upload__icon i:hover {
+  cursor: pointer;
+}
+.upload__input {
+  display: none;
+}
+.upload__container {
+  width: 100%;
+  min-height: 500px;
+  background: #5b73df;
+}
+.upload__container img {
+  width: 240px;
+  height: 150px;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.678);
+  display: none;
+}
+.modal .popup {
+  position: relative;
+  border: 1px solid green;
+}
+.modal .popup .close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+}
+.modal .popup .close span {
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+.modal .popup .arrows {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.modal .popup .arrows div {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
