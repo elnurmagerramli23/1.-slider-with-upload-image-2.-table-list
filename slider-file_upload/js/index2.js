@@ -6,6 +6,17 @@ const nextBtn = document.querySelector('.modal .rightSlide')
 const leftBtn = document.querySelector('.modal .leftSlide')
 const imgs = [];
 
+/*   Change slide on interval   */
+
+let interval = setInterval(changeWithInterval, 3000)
+
+function changeWithInterval() {
+  if (document.querySelector('.modal').style.display === 'flex'){
+    console.log('changed')
+    nextSlide()
+  }else return
+}
+
 /*   Functions with keyboard buttons   */
 
 document.addEventListener('keydown', function (e) {
@@ -79,7 +90,9 @@ function nextSlide() {
 }
 
 nextBtn.addEventListener('click', function () {
+  clearInterval(interval)
   nextSlide()
+  setInterval(changeWithInterval, 3000)
 })
 
 function prevSlide() {
