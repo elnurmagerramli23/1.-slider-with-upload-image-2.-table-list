@@ -5,14 +5,14 @@ const closeIcon = document.querySelector('.modal .closeModal')
 const nextBtn = document.querySelector('.modal .rightSlide')
 const leftBtn = document.querySelector('.modal .leftSlide')
 const imgs = [];
+let isCall = false
 
 /*   Change slide on interval   */
 
-let interval = setInterval(changeWithInterval, 3000)
+let interval = setInterval(changeWithInterval, 2000)
 
 function changeWithInterval() {
   if (document.querySelector('.modal').style.display === 'flex'){
-    console.log('changed')
     nextSlide()
   }else return
 }
@@ -92,7 +92,6 @@ function nextSlide() {
 nextBtn.addEventListener('click', function () {
   clearInterval(interval)
   nextSlide()
-  setInterval(changeWithInterval, 3000)
 })
 
 function prevSlide() {
