@@ -9,7 +9,7 @@ let isCall = false
 
 /*   Change slide on interval   */
 
-let interval = setInterval(changeWithInterval, 2000)
+let interval = setInterval(changeWithInterval, 4000)
 
 function changeWithInterval() {
   if (document.querySelector('.modal').style.display === 'flex'){
